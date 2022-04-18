@@ -1,0 +1,25 @@
+{
+  "name": "meeter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "ui": "npm run start --prefix ui",
+    "api": "npm run start --prefix api",
+    "start": "concurrently \"npm run api\" \"npm run ui\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RadoslawSzymansky/meeter.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RadoslawSzymansky/meeter/issues"
+  },
+  "homepage": "https://github.com/RadoslawSzymansky/meeter#readme",
+  "devDependencies": {
+    "concurrently": "^7.1.0"
+  }
+}
